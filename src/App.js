@@ -2,8 +2,12 @@ import './App.css';
 
 function App() {
 
+  const numeroDeClase = 1;
+
   return (
-    <h2>Clase 1 React</h2>
+    <>
+      <h2>Clase {numeroDeClase}</h2>
+    </>
   );
 }
 
