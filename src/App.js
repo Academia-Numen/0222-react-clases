@@ -26,9 +26,22 @@ function App() {
     { id: 3, nombre: 'TT', label: 'Audi' },
   ];
 
+  function eventHandler(e) {
+    console.log('Has presionado el botón', e.target);
+    e.preventDefault();
+  }
+
   return (
     <div>
-      <Lista contenido={listaDeSeries} tituloDeLista='Series'/>
+      
+      <form onSubmit={eventHandler}>
+        <input type="text" name="" id="" />
+        <input type="submit" />
+      </form>
+
+      <Lista contenido={listaDeSeries} tituloDeLista='Series'>
+        Esta es una lista de series y las plataformas donde podemos encontrarlas
+      </Lista>
       <Lista contenido={listaDePeliculas} tituloDeLista='Peliculas'/>
       <Lista contenido={listaDeAutos} tituloDeLista='Autos'/>
     </div>

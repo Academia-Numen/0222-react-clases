@@ -5,6 +5,7 @@ const Lista = (props) => {
     return (
         <>
             <h2>Lista de {props.tituloDeLista}</h2>
+            <p>{ props.children }</p>
             <ul>
                 {props.contenido.map(serie => (
                     <Card 
