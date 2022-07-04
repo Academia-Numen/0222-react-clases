@@ -1,5 +1,6 @@
 import './App.css';
 import Lista from './components/Lista';
+import Text from './components/Text';
 
 function App() {
 
@@ -33,6 +34,10 @@ function App() {
 
   return (
     <div>
+
+      <Text type='p' color='red' content='Clase 3'/>
+      <Text type='h1' color='blue' content='Props'/>
+      <Text type='h1' color='green' content='Props'/>
       
       <form onSubmit={eventHandler}>
         <input type="text" name="" id="" />
@@ -44,6 +49,8 @@ function App() {
       </Lista>
       <Lista contenido={listaDePeliculas} tituloDeLista='Peliculas'/>
       <Lista contenido={listaDeAutos} tituloDeLista='Autos'/>
+
+      {/* VER EJEMPLO CON OTRO COMPONENTE, TEXTO */}
     </div>
   );
 }
