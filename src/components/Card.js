@@ -1,9 +1,9 @@
 
 export default function Card(props) {
-    const { nombre, label } = props;
+    const { nombre, label, eliminar, id } = props;
 
     return (
-        <li>
+        <li onClick={() => eliminar(id)}>
             <span>{nombre}---</span>
             <span>{label}</span>
         </li>

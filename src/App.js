@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import Counter from './components/Counter';
 import Lista from './components/Lista';
 
 const listaDeSeries = [
@@ -17,20 +16,18 @@ function App() {
 
   const [series, setSeries] = useState(listaDeSeries);
 
-  function agregarSerie() {
-    const nuevaSerie = { id: 8, nombre: 'Gotham', label: 'Netflix' };
-    setSeries(prevState => [...prevState, nuevaSerie]);
+  function eliminarItem(itemAEliminar){
+    const seriesFiltradas = series.filter(serie => serie.id !== itemAEliminar);
+    setSeries(seriesFiltradas);
   }
 
   return (
     <div>
-      <button onClick={agregarSerie}>Actualizar Lista de Series</button>
 
-      <Lista contenido={series} tituloDeLista='Series'>
+      <Lista contenido={series} tituloDeLista='Series' eliminar={eliminarItem}>
         Esta es una lista de series y las plataformas donde podemos encontrarlas
       </Lista>
 
-      <Counter />
     </div>
   );
 }
