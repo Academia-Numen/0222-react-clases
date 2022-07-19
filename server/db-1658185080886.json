@@ -1,0 +1,34 @@
+{
+  "team": {
+    "country": "Argentina",
+    "matches": [
+      {
+        "match": 1,
+        "date": "22/11/2022",
+        "day": "Martes",
+        "time": "7 AM",
+        "rival": "Arabia Saudita",
+        "stadium": "Lusail Stadium",
+        "img": "https://images2.minutemediacdn.com/image/upload/c_crop,w_4332,h_2436,x_0,y_142/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_es_international_web/01fzk8f0afbamnzxvp0k.jpg"
+      },
+      {
+        "match": 2,
+        "date": "26/11/2022",
+        "day": "Sabado",
+        "time": "16 PM",
+        "rival": "México",
+        "stadium": "Lusail Stadium",
+        "img": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/11/14/15106236591457.jpg"
+      },
+      {
+        "match": 3,
+        "date": "30/11/2022",
+        "day": "Martes",
+        "time": "16 PM",
+        "rival": "Polonia",
+        "stadium": "Stadium 974",
+        "img": "https://as.com/futbol/imagenes/2017/11/20/reportajes/1511209696_976630_1511210006_noticiareportajes_grande.jpg"
+      }
+    ]
+  }
+}

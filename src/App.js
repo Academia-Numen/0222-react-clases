@@ -1,5 +1,4 @@
-import './App.css';
-import Lista from './components/Lista';
+import Lista from './components/Lista/Lista';
 
 function App() {
 
