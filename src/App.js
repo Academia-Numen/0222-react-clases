@@ -1,15 +1,17 @@
 import { AppContainer } from './App.styled';
-import BooksList from './components/BooksList';
-import Navbar from './components/Navbar';
-import ThemeToggle from './components/ThemeToggle';
-import BooksContextProvider from './contexts/BooksContext';
-import ThemeContextProvider from './contexts/ThemeContext';
+import Counter from './components/Counter';
+// import BooksList from './components/BooksList';
+// import Navbar from './components/Navbar';
+// import ThemeToggle from './components/ThemeToggle';
+// import BooksContextProvider from './contexts/BooksContext';
+// import ThemeContextProvider from './contexts/ThemeContext';
 
 function App() {
 
   return (
     <AppContainer>
-      <ThemeContextProvider>
+      <Counter />
+      {/* <ThemeContextProvider>
         <BooksContextProvider>
 
           <Navbar />
@@ -20,7 +22,7 @@ function App() {
 
         <ThemeToggle />
 
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
     </AppContainer>
   );
 }
