@@ -1,28 +1,29 @@
 import { AppContainer } from './App.styled';
-import Counter from './components/Counter';
-// import BooksList from './components/BooksList';
-// import Navbar from './components/Navbar';
-// import ThemeToggle from './components/ThemeToggle';
-// import BooksContextProvider from './contexts/BooksContext';
-// import ThemeContextProvider from './contexts/ThemeContext';
+import BooksList from './components/BooksList';
+import Navbar from './components/Navbar';
+import NewBookForm from './components/NewBookForm';
+import ThemeToggle from './components/ThemeToggle';
+import BooksContextProvider from './contexts/BooksContext';
+import ThemeContextProvider from './contexts/ThemeContext';
 
 function App() {
 
   return (
     <AppContainer>
-      <Counter />
-      {/* <ThemeContextProvider>
+      <ThemeContextProvider>
         <BooksContextProvider>
 
           <Navbar />
 
           <BooksList />
 
+          <NewBookForm />
+
         </BooksContextProvider>
 
         <ThemeToggle />
 
-      </ThemeContextProvider> */}
+      </ThemeContextProvider>
     </AppContainer>
   );
 }
