@@ -18,7 +18,7 @@ const NewBookForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        const newBook = { author: author, title: title, id: generateId(books)};
+        const newBook = { author: author, title: title, id: generateId(books), isRead: false };
         dispatch({ type: ACTIONS.ADD_BOOK, payload: newBook });
         setTitle('');
         setAuthor('');
